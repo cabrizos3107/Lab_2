@@ -24,7 +24,7 @@ Docs are in `docs/`.
 
 You will see console output showing:
 - different media sources (adapter)
-- switching renderers (bridge/strategy)
+- switching renderers (bridge)
 - decorated media with subtitles and watermark (decorator)
 
 ## Tests
