@@ -1,33 +1,54 @@
-# Lab_2
-Structural Design Patterns
-# Modular Media Streaming Suite — Lab 2
+# Modular Media Streaming Suite
 
-Simple demo project that uses structural design patterns:
-Adapter, Decorator, Bridge, Composite.
+## Description
+This project is a **Modular Media Streaming Suite** built using **structural design patterns**. It supports:  
 
-## Files to run
-Put Java files in `src/`:
-- Main.java
-- MediaPlayer.java
-- MediaSource.java
-- MediaDecorator.java
-- Renderer.java
+- Multiple media sources (local files, remote streams)  
+- On-the-fly feature plugins (subtitles, watermark)  
+- Playlists with single media and sub-playlists  
+- Switching rendering strategy (hardware or software)  
+- Remote stream caching  
 
-Docs are in `docs/`.
-
-## How to compile & run (simple)
-1. Open terminal in project root.
-2. Compile all Java files (example):
-   javac src/*.java
-3. Run:
-   java -cp src Main
-
-You will see console output showing:
-- different media sources (adapter)
-- switching renderers (bridge)
-- decorated media with subtitles and watermark (decorator)
-
-## Tests
-This project is a simple console demo. For unit tests, create test files and use your preferred test framework.
+Design patterns used: **Decorator, Adapter, Proxy, Bridge, Composite**.
 
 
+## Project Structure
+src/
+├─ Main.java
+├─ MediaPlayer.java
+├─ MediaDecorator.java
+├─ MediaSource.java
+├─ Render.java
+├─ Playlist.java
+├─ RemoteStreamProxy.java
+docs/
+├─ UML_Class_Diagram.png
+├─ Sequence_Diagrams.png
+└─ Architecture_Overview.md
+
+
+
+## How to Run
+
+1. Open terminal / command prompt  
+2. Navigate to the `src/` folder  
+3. Compile all Java files:
+javac *.java
+
+4. Run the main program:
+java Main
+
+
+## What the Demo Shows
+
+- Playing local and remote media files  
+- Applying decorators like subtitles and watermark  
+- Switching renderer from hardware to software  
+- Using cached remote streams (Proxy Pattern)  
+- Playing playlists with multiple media items  
+
+
+## Notes
+- Make sure Java is installed on your system  
+- The code uses only console output, no GUI  
+- All features are implemented to demonstrate **structural design patterns** 
