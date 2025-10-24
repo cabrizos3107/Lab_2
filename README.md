@@ -3,7 +3,7 @@ Structural Design Patterns
 # Modular Media Streaming Suite — Lab 2
 
 Simple demo project that uses structural design patterns:
-Adapter, Decorator, and Bridge/Strategy.
+Adapter, Decorator, Bridge, Composite.
 
 ## Files to run
 Put Java files in `src/`:
